@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+#include<bits/stdc++.h>
+int main()
+{
+	long long int t;cin>>t;
+	
+	while(t--)
+	{
+		long long int x,y,k,n,r,p;
+		cin>>x>>y>>k>>n;
+		int flag=0;
+		for(long long int i=1;i<=n;i++)
+		{  
+			cin>>p>>r;
+			//cout<<p<<" "<<r<<endl;
+			if(r<=k)
+			{ //cout<<"1st";
+			  if((x-y)<=p)
+				 {  //cout<<"2nd";
+				 	 flag=1;	
+				 }
+			}
+		}
+	
+		if(flag)
+		cout<<"LuckyChef\n";
+		else
+		cout<<"UnluckyChef\n";
+		
+	}
+	
+	return 0;
+}
+    
+    
